@@ -6,7 +6,7 @@ from http import HTTPStatus
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def get_game_list(self)
-        msg = f"games list: {self.games_list}"
+        msg = f"games list: none yet"
         self.wfile.write(msg.encode())
 
     def do_GET(self):
